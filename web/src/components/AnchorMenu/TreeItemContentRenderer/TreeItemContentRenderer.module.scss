@@ -39,3 +39,23 @@
   display: inline-flex;
   gap: 0.25rem;
 }
+.dropTarget {
+  background-color: rgb(18 111 135 / 15%);
+  border: 2px dashed var(--primary-2);
+  border-radius: 4px;
+  box-shadow: 0 0 12px rgb(18 111 135 / 30%);
+  animation: pulse-border 1s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+  0%,
+  100% {
+    border-color: var(--primary-2);
+    background-color: rgb(18 111 135 / 15%);
+  }
+
+  50% {
+    border-color: rgb(18 111 135 / 60%);
+    background-color: rgb(18 111 135 / 25%);
+  }
+}
